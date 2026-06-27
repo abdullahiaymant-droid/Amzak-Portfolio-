@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khadija Shehu | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a onclick="showPage('home')" id="nav-home" class="active">Home</a>
+      <a onclick="showPage('about')" id="nav-about">About</a>
+      <a onclick="showPage('skills')" id="nav-skills">Skills</a>
+      <a onclick="showPage('education')" id="nav-education">Education</a>
+      <a onclick="showPage('goals')" id="nav-goals">Goals</a>
+      <a onclick="showPage('achievements')" id="nav-achievements">Achievements</a>
+      <a onclick="showPage('certificates')" id="nav-certificates">Certificates</a>
+      <a onclick="showPage('resume')" id="nav-resume">Resume</a>
+      <a onclick="showPage('contact')" id="nav-contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="page-home" class="container hero page-view active-view">
+    <h1>Hi, I'm Khadija Shehu 👋</h1>
+    <p>Software Engineering Student at Northwest University Kano</p>
+    <p>Level 200</p>   
+    <p>I build responsive, clean websites with HTML, CSS, and GitHub.</p>
+    
+    <div class="cta-buttons">
+      <a onclick="showPage('skills')" class="btn" style="cursor:pointer;">View My Skills</a>
+      <a onclick="showPage('resume')" class="btn btn-outline" style="cursor:pointer;">View Resume</a>
+    </div>
+  </main>
+
+  <main id="page-about" class="container page-view">
+    <h1>About Me</h1>
+    <div class="about-card">
+      <h2>Hi, I'm Khadija Shehu 👋</h2>
+      <p>
+        I’m a 200 Level Software Engineering student at <strong>Northwest University Kano</strong>. 
+        I’m passionate about building websites that are clean, responsive, and easy to use.
+      </p>
+      <p>
+        I started learning web development through <strong>freeCodeCamp</strong> and GitHub. 
+        Right now I’m focused on HTML, CSS, Responsive Web Design, and getting better every day.
+      </p>
+      <p>
+        Outside of code, I enjoy learning new tech skills, working on personal projects, and 
+        connecting with other developers. My goal is to become a professional software engineer 
+        and create solutions that make an impact in Nigeria and beyond.
+      </p>
+      
+      <div class="about-highlights">
+        <div>📍 Kano, Nigeria</div>
+        <div>💻 Front-End Learner</div>
+        <div>🎓 Level 200 Student</div>
+      </div>
+    </div>
+  </main>
+
+  <main id="page-skills" class="container page-view">
+    <h1>My Skills</h1>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h2>Responsive Web Design</h2>
+        <p>Building sites that look great on phones, tablets, and desktops.</p>
+      </div>
+      <div class="skill-card">
+        <h2>HTML</h2>
+        <p>Structuring clean, semantic web pages from scratch.</p>
+      </div>
+      <div class="skill-card">
+        <h2>CSS</h2>
+        <p>Styling with layouts, colors, and modern design.</p>
+      </div>
+      <div class="skill-card">
+        <h2>GitHub</h2>
+        <p>Version control, repos, and hosting sites with GitHub Pages.</p>
+      </div>
+    </div>
+  </main>
+
+  <main id="page-education" class="container page-view">
+    <h1>Education</h1>
+    <div class="edu-card">
+      <h2>B.Sc. Software Engineering</h2>
+      <p><strong>School:</strong> Northwest University Kano</p>
+      <p><strong>Level:</strong> 200 Level</p>
+      <p><strong>Status:</strong> <span class="status">Currently Studying</span></p>
+    </div>
+    <div class="edu-card">
+      <h2>freeCodeCamp</h2>
+      <p><strong>Course:</strong> Responsive Web Design Certification</p>
+      <p><strong>Focus:</strong> HTML, CSS, Responsive Layouts</p>
+      <a onclick="showPage('certificates')" class="btn-small" style="cursor:pointer;">View Certificate →</a>
+    </div>
+  </main>
+
+  <main id="page-goals" class="container page-view">
+    <h1>My Goals</h1>
+    <div class="goal-card">
+      <h2>🎯 Short-Term Goal</h2>
+      <p>To become a professional Software Engineer by mastering front-end and back-end development.</p>
+    </div>
+    <div class="goal-card">
+      <h2>🚀 Long-Term Vision</h2>
+      <p>To build tech solutions that solve real problems in Nigeria and beyond.</p>
+    </div>
+    <div class="goal-card">
+      <h2>📚 What I’m Working On Now</h2>
+      <ul>
+        <li>Completing freeCodeCamp’s Responsive Web Design Certification</li>
+        <li>Building my portfolio website with 10+ pages</li>
+        <li>Learning version control with Git & GitHub</li>
+        <li>Improving problem-solving with consistent practice</li>
+      </ul>
+    </div>
+  </main>
+
+  <main id="page-achievements" class="container page-view">
+    <h1>My Achievements</h1>
+    <div class="achievement-grid">
+      <div class="achievement-card">
+        <div class="icon">🎓</div>
+        <h2>freeCodeCamp Certification</h2>
+        <p>Completed the <strong>Responsive Web Design Certification</strong>.</p>
+        <a onclick="showPage('certificates')" class="btn-small" style="cursor:pointer;">View Certificate →</a>
+      </div>
+      <div class="achievement-card">
+        <div class="icon">💻</div>
+        <h2>Responsive Websites</h2>
+        <p>Built multiple responsive websites using only <strong>HTML and CSS</strong>.</p>
+      </div>
+      <div class="achievement-card">
+        <div class="icon">🚀</div>
+        <h2>Portfolio Website</h2>
+        <p>Created and deployed a full <strong>10-page personal portfolio</strong> using GitHub Pages.</p>
+        <a onclick="showPage('home')" class="btn-small" style="cursor:pointer;">Visit Portfolio →</a>
+      </div>
+    </div>
+  </main>
+
+  <main id="page-certificates" class="container page-view">
+    <h1>My Certificates</h1>
+    <div class="cert-card">
+      <h2>Responsive Web Design</h2>
+      <p><strong>Issuer:</strong> freeCodeCamp</p>
+      <p><strong>Date Earned:</strong> 2026</p>
+      <img src="freecodecamp cert.jpg" alt="freeCodeCamp Certification Thumbnail" class="cert-img"> 
+      <br>
+      <a href="https://www.freecodecamp.org/certification/khadijashehu2303/responsive-web-design" target="_blank" class="btn">Verify Certificate</a>
+    </div>
+  </main>
+
+  <div id="page-resume" class="page-view">
+    <main class="resume">
+      <header class="resume-header" style="background:transparent; color:#333; padding:0;">
+        <h1>Khadija Shehu</h1>
+        <p>Software Engineering Student</p>
+        <div class="contact">
+          <p>📞 0806 948 3772</p>
+          <p>🎓 Northwest University Kano</p>
+        </div>
+      </header>
+      <section>
+        <h2>Education</h2>
+        <p><strong>B.Sc. Software Engineering</strong><br>Northwest University Kano</p>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>Responsive Web Design</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>GitHub / GitHub Pages</li>
+        </ul>
+      </section>
+      <section>
+        <h2>About Me</h2>
+        <p>Aspiring software engineer focused on building responsive, accessible websites.</p>
+      </section>
+      <footer style="background:none; margin-top:10px; padding:0;">
+        <a onclick="showPage('home')" style="cursor:pointer; color:#333; font-weight:bold;">← Back to Portfolio</a>
+      </footer>
+    </main>
+  </div>
+
+  <main id="page-contact" class="container page-view">
+    <h1>Get In Touch</h1>
+    <div class="contact-card">
+      <div class="contact-item">
+        <h3>✉️ Email</h3>
+        <a href="mailto:shehuk2303@gmail.com">shehuk2303@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <h3>📞 Phone</h3>
+        <a href="tel:08069483772">0806 948 3772</a>
+      </div>
+      <div class="contact-item">
+        <h3>💻 GitHub</h3>
+        <a href="https://github.com/shehuk2303-spec" target="_blank">github.com/shehuk2303-spec</a>
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent simulated!');">
+      <h2>Send a Message</h2>
+      <label>Your Name</label>
+      <input type="text" placeholder="Enter your name" required>
+      <label>Your Email</label>
+      <input type="email" placeholder="Enter your email" required>
+      <label>Message</label>
+      <textarea rows="5" placeholder="Type your message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Khadija Shehu | Software Engineering Student.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
